@@ -1,0 +1,15 @@
+Description : When a user changes his account password, all the sessions on other devices/browsers should expire.
+
+Cause : Suppose any user (victim) left his account logged in on any computer/browser (victim could use browser at Cyber Cafe or any shared computer). And after a particular he realised that he left his account logged in, and there is a security provided that when a user changes his account password all other sessions should invalidate or expire, which will expire the session from that shared computer.
+
+But in your web application, I didn't found any such security that invalidate the session after password. Here if any user left his account logged in, any attacker can misuse the victim's account and there is no option available to the victim to invalidate the session on that shared computer which could lead to some major problems.
+
+Steps to Reproduce:
+
+Create an account and go to my profile.
+Change password in Browser 1
+Go to Browser 2 and edit the data and save.
+Data changed.
+Checked by refreshing the web page.
+Impact
+The attacker is still able to login in without password even user changed the password also. 
