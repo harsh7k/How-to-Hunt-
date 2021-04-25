@@ -14,4 +14,4 @@ Step to Reproduce
 
 Mitigation : when ever user change the email first it should verify the email again to enable the 2fa code or 2fa code should be disbale whenever victim changes the email so no lockdown possiblites occurs 
 
-If you want to know more about the vunlerablity please let me know
+
