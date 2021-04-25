@@ -1,0 +1,17 @@
+Hello Team i have found a vulnerability which can lead to compeltly lockdown from the victim account
+
+This issue can cause the user not able to use your services.
+
+Step to Reproduce 
+
+1. Go to the url https://Target.com/  an attacker will create an account with email  (xyz@gmail.com).
+2.attacker will verify the email as it is mandatory to verify the email to enable the 2fa authentication code.
+3.Attacker enable the 2fa authentication code Successfully 
+4.Attacker will change his email id and use victim email id (abc@gmail.com)and and update the email (an attacker can use any-email id of victims).
+5.Now victim email id(abc@gmail.com) is being updated and the 2fa authentication is still enable on attacker email id (xyz@gmail.com)
+6.Now if victim try to sign-up in into the account he/she can't sign-up becuase it will says account already exist and victim will reset the password but required verification code which is enabled by an attacker and user has no access to it.
+
+
+Mitigation : when ever user change the email first it should verify the email again to enable the 2fa code or 2fa code should be disbale whenever victim changes the email so no lockdown possiblites occurs 
+
+If you want to know more about the vunlerablity please let me know
